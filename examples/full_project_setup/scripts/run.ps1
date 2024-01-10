@@ -2,8 +2,7 @@
 # `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`
 # in a powershell running in administrator mode.
 
-# With this, to pass multiple parameters, you should use:
-# .\run.ps1 arg1, arg2, arg3
+# This passes trough any and all parameters to the container
 param(
     [Parameter(ValueFromRemainingArguments=$true, Position=0)]
     [String[]] $arguments
